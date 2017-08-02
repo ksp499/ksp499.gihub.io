@@ -1,0 +1,366 @@
+body {
+	width: 1260px;
+	margin: 0;
+	background-image: url("../images/background-texture.png");
+}
+
+/* Top Section */
+
+#top {
+	width: 1260px;
+	margin: 0;
+	display: inline-block;
+	text-align: center;
+	background-color: #ffffff;
+	border-bottom: 1px solid #ccc;
+}
+
+header {
+	float: left;
+	width: 200px;
+	margin-left: 150px;
+	background-color: #4aaaa5;
+	padding: 20px 16px 20px 16px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+
+}
+
+/* Navigation Section */
+
+nav {
+	float: right;
+	width: 360px;
+	margin: 0 90px;
+	padding: 20px 0px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777;
+}
+
+a:visited, a:link {
+	color: #777;
+	text-decoration: none;
+}
+
+/* Main Section */
+
+#mid {
+	width: 960px;
+	margin: 30px 0 30px 150px;
+	display: inline-block;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+section {
+	width: 608px;
+	float: left;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 30px 20px;
+}
+
+section h1 {
+	color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	margin: 0;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #ccc;
+}
+
+#self {
+	display: inline-block;
+}
+
+section div {
+	display: inline-block;
+	margin-top: 15px;
+}
+
+section img {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+#introduce {
+	margin: 0;
+}
+
+/* Portfolio Section */
+
+#portfolio {
+	position: relative;
+	width: 608px;
+	height: 350px;
+}
+
+.img {
+	position: absolute;
+}
+
+.img_one {
+	top: 30px;
+	left: 30px;
+}
+
+.img_two {
+	top: 30px;
+	right: 30px;
+}
+
+.img_three {
+	bottom: 30px;
+	left: 30px;
+}
+
+.img_four {
+	bottom: 30px;
+	right: 30px;
+}
+
+/* Contact Section */
+
+section p form{
+	color: #999;
+}
+
+/* Side Bar */
+
+aside {
+	width: 228px;
+	float: right;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 30px 20px;
+}
+
+aside h3 {
+	color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	margin: 0;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #eee;
+}
+
+aside p a img{
+	margin: 20px 5px 0 5px;
+}
+
+/* Footer */
+
+footer {
+	text-align: center;
+	padding: 30px 0;
+	color: #bbb;
+	background-color: #666;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 13px;
+	border-top: 5px solid #4aaaa5;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 980px) {
+
+	body {
+		width: 980px;
+	}
+
+/* Top Section */
+
+	#top {
+		width: 980px;
+	}
+
+	header {
+		margin-left: 120px;
+	}
+
+/* Main Section */
+
+	#mid {
+		width: 710px;
+		margin: 30px 0 30px 120px;
+	}
+
+	section {
+		width: 370px;
+	}
+
+	section img {
+		float: none;
+		width: 370px;
+		height: 450px;
+	}
+
+	#portfolio {
+		position: static;
+		width: 370px;
+	}
+
+	.img {
+		position: static;
+		margin-bottom: 20px;
+		width: 370px;
+		height: 300px;
+	}
+
+/* Side Bar */
+
+	aside {
+		width: 228px;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	body {
+		width: 768px;
+	}
+
+/* Top Section */
+
+	#top {
+		width: 768px;
+	}
+
+	header {
+		margin-left: 20px;
+	}	
+
+	nav {
+		width: 260px;
+		margin: 0 20px;
+	}
+
+/* Main Section */
+
+	#mid {
+		width: 728px;
+		margin: 30px 20px 30px 20px;
+	}
+
+	section {
+		width: 670px;
+	}
+
+	section img {
+		float: left;
+		margin: 0 25px 10px 0;
+	}
+
+	#portfolio {
+		position: static;
+		width: 370px;
+		display: inline;
+	}
+
+	.img {
+		position: static;
+		margin: 15px 30px 15px 0px;
+		float: left;
+		width: 305px;
+		height: 180px;
+	}
+
+	.img_two, .img_four {
+		margin-right: 0;
+		margin-left: 27px;
+	}
+
+	section h1 {
+		margin-bottom: 10px;
+	}
+
+/* Side Bar */
+
+	aside {
+		width: 670px;
+		float: left;
+		margin-top: 40px;
+	}
+
+	aside p {
+		margin: 0;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+
+	body {
+		width: 640px;
+	}
+
+/* Top Section */
+
+	#top {
+		width: 640px;
+	}
+
+	header {
+		margin-left: 0px;
+		width: 640px;
+		padding: 20px 0;
+	}	
+
+	nav {
+		width: 640px;
+		margin: 0 0px;
+	}	
+
+	nav a {
+		margin: 0 60px;
+	}
+
+/* Main Section */
+
+	#mid {
+		width: 595px;
+		margin: 15px;
+	}
+
+	section {
+		width: 555px;
+	}
+
+	section img {
+		width: 555px;
+		height: 600px;
+		float: none;
+		margin: 0 25px 10px 0;
+	}
+
+	#portfolio {
+		position: static;
+		width: 370px;
+		display: inline;
+	}
+
+	.img {
+		position: static;
+		margin: 15px 30px 15px 0px;
+		float: left;
+		width: 555px;
+		height: 300px;
+	}
+
+	section h1 {
+		margin-bottom: 10px;
+	}
+
+/* Side Bar */
+
+	aside {
+		width: 555px;
+		float: left;
+		margin-top: 40px;
+	}
+
+	aside p {
+		margin: 0;
+	}
+
+}
